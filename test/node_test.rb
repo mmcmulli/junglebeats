@@ -13,7 +13,7 @@ class Node_test < Minitest::Test
   def test_if_only_one_node_next_node_eql_nil
     node = Node.new("plop")
     node.next_node
-    assert node.next_node
+    refute node.next_node #because next node set default to nil, use refute? or should i not set default?
   end
 
   def test_it_knows_what_is_in_next_node
