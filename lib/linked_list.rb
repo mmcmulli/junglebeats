@@ -70,10 +70,11 @@ class LinkedList
     @count -= 1
     if next_node == nil
 
-      #return tail's data 
+      #return tail's data
 
     #removes last element from the list and returns its value
-  end
+    end
+  end 
 
 end
 

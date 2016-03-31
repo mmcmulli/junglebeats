@@ -16,7 +16,7 @@ class LinkedListTest < Minitest::Test
     list = LinkedList.new("deep")
     list.append("dop")
     assert_equal "dop", list.tail.data
-    refute, list.tail.next_node
+    refute list.tail.next_node
   end
 
   def test_it_can_append_one_piece_of_data

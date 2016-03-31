@@ -21,8 +21,6 @@ class JungleBeat
     #splitting the string before linked list
     #results in three nodes appended
   end
-
-
 end
 
 # binding.pry

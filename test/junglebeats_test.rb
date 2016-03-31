@@ -11,11 +11,11 @@ class JunglebeatsTest < Minitest::Test
     assert_equal "tee dee dee", jbeats.append("tee dee dee")
   end
 
-  def test_can_play_beats
-    jbeats = JungleBeats.new
-    jbeats.append("tee dee deep")
-    assert_equal jbeats.play, #????
-  end
+  # def test_can_play_beats
+  #   jbeats = JungleBeats.new
+  #   jbeats.append("tee dee deep")
+  #   assert_equal jbeats.play, #????
+  # end
 
 end
 
