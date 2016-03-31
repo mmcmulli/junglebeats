@@ -25,6 +25,4 @@ class Node_test < Minitest::Test
     refute node.next_node
   end
 
-  
-
 end
