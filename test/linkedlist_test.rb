@@ -39,14 +39,12 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_has_a_string_representation_of_list
-    skip
     list = LinkedList.new("doop")
     list.append("deep")
     assert_equal "doop deep", list.to_string
   end
 
   def test_it_can_append_and_count_multiple_pieces_of_data
-    skip
     list = LinkedList.new("doop")
     list.append("deep")
     list.append("dooooop")
@@ -54,7 +52,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_can_append_more_than_one_piece_of_data
-    skip
     list = LinkedList.new("doop")
     assert_equal "doop", list.tail.data
     list.append("deep")
@@ -65,15 +62,13 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_can_prepend_an_item
-    skip
-    list = LinedList.new
+    list = LinkedList.new
     list.prepend("dop")
-    assert_equal "dop", list.data
+    assert_equal "dop", list.head.data
   end
 
   def test_it_can_insert_node
-    skip
-    list = LinedList.new("doop")
+    list = LinkedList.new("doop")
     list.insert(1, "woo")
     assert_equal "woo", list.head.next_node.data
     list.insert(2, "wee")

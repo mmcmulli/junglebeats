@@ -52,9 +52,6 @@ class LinkedList
   def insert(position, data)
     new_node = Node.new(data)
     following_node = new_node(position + 1)
-    preceeding_node = new_node(position - 1)
-    new_node.next_node = following_node(position)
-    preceeding_node(position).next_node = new_node
   end
 
   def includes?(data)
@@ -74,7 +71,7 @@ class LinkedList
 
     #removes last element from the list and returns its value
     end
-  end 
+  end
 
 end
 
